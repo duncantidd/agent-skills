@@ -40,7 +40,14 @@ agent-skills/
 │   ├── js_dom_and_events_skill_guide.md
 │   └── js_error_handling_skill_guide.md
 │
-└── [future-domains]/            # (e.g., typescript/, web-perf/, react/, etc.)
+├── wizz/                        # Wizz.js Native domain knowledge base
+│   ├── README.md                # Domain mission, contracts, and index
+│   ├── wizz_components_skill_guide.md
+│   ├── wizz_reactivity_and_state_skill_guide.md
+│   ├── wizz_template_directives_skill_guide.md
+│   └── wizz_architecture_and_workflow_skill_guide.md
+│
+└── [future-domains]/            # (e.g., typescript/, web-perf/, etc.)
     ├── README.md
     └── [domain]_[topic]_skill_guide.md
 ```

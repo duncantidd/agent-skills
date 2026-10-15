@@ -69,8 +69,9 @@ Before writing, refactoring, or reviewing frontend styling or architecture, you 
 
 1. **CSS Tasks**: Consult `.skills/css/README.md` to identify the relevant guide (e.g. layout, colors, typography, state).
 2. **JavaScript Tasks**: Consult `.skills/javascript/README.md` for standard library utilities, async patterns, DOM/events, and error causation.
-3. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
-4. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
+3. **Wizz.js Tasks**: Consult `.skills/wizz/README.md` for component architecture, reactivity, template directives, and deployment.
+4. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
+5. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
 ```
 
 If your project also uses [**`AGENTS.md`**](./AGENTS.md) (for OpenAI Codex, Cursor, or tools following that convention), ensure it points to `CLAUDE.md`:
@@ -101,6 +102,13 @@ Platform-native, zero-dependency modern ECMAScript standards and Web APIs:
 - **[Async & Concurrency Control](./javascript/js_async_and_concurrency_skill_guide.md)**: `for...of` vs `Promise.all` (`forEach` async trap), `Promise.allSettled()`, `AbortController`, `AbortSignal.timeout()`, `AbortSignal.any()`.
 - **[DOM & Event Architecture](./javascript/js_dom_and_events_skill_guide.md)**: Declarative listener teardown via `{ signal }`, atomic `replaceChildren()`, `<template>` cloning, `event.target.closest()`, `IntersectionObserver`, `ResizeObserver`, `FormData`.
 - **[Error Handling & Diagnostics](./javascript/js_error_handling_skill_guide.md)**: Error causation (`{ cause: err }`), custom `class extends Error` hierarchies, safe error normalization, global async error boundaries.
+
+### 🧙 [Wizz.js Native Skills & Best Practices](./wizz/README.md)
+Zero-dependency, compiler-guaranteed reactive framework standards:
+- **[Component Architecture & Composition](./wizz/wizz_components_skill_guide.md)**: Single-root element rule, safe template expression subset, component imports, `<wizz:head>` metadata, and scoped `<wizz:style>`.
+- **[Reactivity, State & Lifecycle](./wizz/wizz_reactivity_and_state_skill_guide.md)**: Microtask batching via `let`, read-only `export let` props, cross-tab reactive persistence via `persist()`, and `onMount`/`onDestroy`.
+- **[Template Directives & Control Flow](./wizz/wizz_template_directives_skill_guide.md)**: Structural `{#if}` branching, `{#each}` iteration constraints, container event delegation, and precomputed list data.
+- **[Architecture, Tooling & Server Deployment](./wizz/wizz_architecture_and_workflow_skill_guide.md)**: Project scaffolding (`wizz init`), live dev server (`wizz dev`), SSR production builds (`wizz build --adapter node`), and server API routes (`src/server/api/`).
 
 ---
 
