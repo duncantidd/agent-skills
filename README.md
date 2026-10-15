@@ -68,8 +68,9 @@ Add the following router directive to your target project's root [**`CLAUDE.md`*
 Before writing, refactoring, or reviewing frontend styling or architecture, you MUST consult the skills library in `.skills/`:
 
 1. **CSS Tasks**: Consult `.skills/css/README.md` to identify the relevant guide (e.g. layout, colors, typography, state).
-2. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
-3. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, legacy flexbox overflow traps) are introduced.
+2. **JavaScript Tasks**: Consult `.skills/javascript/README.md` for standard library utilities, async patterns, DOM/events, and error causation.
+3. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
+4. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
 ```
 
 If your project also uses [**`AGENTS.md`**](./AGENTS.md) (for OpenAI Codex, Cursor, or tools following that convention), ensure it points to `CLAUDE.md`:
@@ -93,6 +94,13 @@ Platform-native, zero-dependency modern CSS standards:
 - **[Selectors & State Management](./css/css_selectors_and_state_skill_guide.md)**: Relational selector (`:has()`), `:user-valid`/`:user-invalid`, `:focus-visible`, `:focus-within`, floating labels.
 - **[Accessibility & Preference Ergonomics](./css/css_accessibility_skill_guide.md)**: Zero-side-effect `.sr-only`, High-contrast focus, `prefers-reduced-motion`, `pointer: coarse` tap targets.
 - **[Modern UI Components & Form Controls](./css/css_components_and_forms_skill_guide.md)**: Native `<dialog>`, Popover API, `<details name>` exclusive accordions, `field-sizing: content`, `accent-color`.
+
+### ⚡ [JavaScript Native Skills & Best Practices](./javascript/README.md)
+Platform-native, zero-dependency modern ECMAScript standards and Web APIs:
+- **[Modern Standard Library](./javascript/js_standard_library_skill_guide.md)**: `structuredClone()`, `Object.groupBy()`, `toSorted()`, `toReversed()`, `toSpliced()`, `crypto.randomUUID()`, `Promise.withResolvers()`, `array.at(-1)`.
+- **[Async & Concurrency Control](./javascript/js_async_and_concurrency_skill_guide.md)**: `for...of` vs `Promise.all` (`forEach` async trap), `Promise.allSettled()`, `AbortController`, `AbortSignal.timeout()`, `AbortSignal.any()`.
+- **[DOM & Event Architecture](./javascript/js_dom_and_events_skill_guide.md)**: Declarative listener teardown via `{ signal }`, atomic `replaceChildren()`, `<template>` cloning, `event.target.closest()`, `IntersectionObserver`, `ResizeObserver`, `FormData`.
+- **[Error Handling & Diagnostics](./javascript/js_error_handling_skill_guide.md)**: Error causation (`{ cause: err }`), custom `class extends Error` hierarchies, safe error normalization, global async error boundaries.
 
 ---
 

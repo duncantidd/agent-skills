@@ -33,6 +33,13 @@ agent-skills/
 │   ├── css_accessibility_skill_guide.md
 │   └── css_components_and_forms_skill_guide.md
 │
+├── javascript/                  # JavaScript Native domain knowledge base
+│   ├── README.md                # Domain mission, principles, and index
+│   ├── js_standard_library_skill_guide.md
+│   ├── js_async_and_concurrency_skill_guide.md
+│   ├── js_dom_and_events_skill_guide.md
+│   └── js_error_handling_skill_guide.md
+│
 └── [future-domains]/            # (e.g., typescript/, web-perf/, react/, etc.)
     ├── README.md
     └── [domain]_[topic]_skill_guide.md
