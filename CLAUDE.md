@@ -49,17 +49,29 @@ agent-skills/
 │
 ├── design_principles/           # Visual design systems & multimodal UI packages
 │   ├── README.md                # Design systems index
-│   └── neumorphism/             # Modern Neumorphism (Soft UI) design package
-│       ├── README.md            # Neumorphism laws, index, and multimodal guide
-│       ├── images/              # Component & palette reference sheets for agents
-│       ├── neumorphism_foundations_and_tokens_skill_guide.md
-│       ├── neumorphism_color_palettes_and_theming_skill_guide.md
-│       ├── neumorphism_layout_and_cards_skill_guide.md
-│       ├── neumorphism_button_skill_guide.md
-│       ├── neumorphism_forms_and_inputs_skill_guide.md
-│       ├── neumorphism_sliders_and_toggles_skill_guide.md
-│       ├── neumorphism_loader_and_progress_skill_guide.md
-│       └── neumorphism_navigation_and_accessibility_skill_guide.md
+│   ├── neumorphism/             # Modern Neumorphism (Soft UI) design package
+│   │   ├── README.md            # Neumorphism laws, index, and multimodal guide
+│   │   ├── images/              # Component & palette reference sheets for agents
+│   │   ├── neumorphism_foundations_and_tokens_skill_guide.md
+│   │   ├── neumorphism_color_palettes_and_theming_skill_guide.md
+│   │   ├── neumorphism_layout_and_cards_skill_guide.md
+│   │   ├── neumorphism_button_skill_guide.md
+│   │   ├── neumorphism_forms_and_inputs_skill_guide.md
+│   │   ├── neumorphism_sliders_and_toggles_skill_guide.md
+│   │   ├── neumorphism_loader_and_progress_skill_guide.md
+│   │   └── neumorphism_navigation_and_accessibility_skill_guide.md
+│   │
+│   └── swiss_grid/              # Swiss Grid (International Typographic Style) package
+│       ├── README.md            # Swiss Grid laws, index, and multimodal guide
+│       ├── images/              # Editorial & component specification sheets
+│       ├── swiss_grid_foundations_and_tokens_skill_guide.md
+│       ├── swiss_grid_typography_and_hierarchy_skill_guide.md
+│       ├── swiss_grid_color_palettes_and_theming_skill_guide.md
+│       ├── swiss_grid_editorial_layout_and_cards_skill_guide.md
+│       ├── swiss_grid_button_and_action_skill_guide.md
+│       ├── swiss_grid_forms_and_inputs_skill_guide.md
+│       ├── swiss_grid_tables_and_data_index_skill_guide.md
+│       └── swiss_grid_navigation_and_status_skill_guide.md
 │
 └── [future-domains]/            # (e.g., typescript/, web-perf/, etc.)
     ├── README.md

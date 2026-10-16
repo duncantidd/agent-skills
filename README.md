@@ -70,7 +70,7 @@ Before writing, refactoring, or reviewing frontend styling or architecture, you 
 1. **CSS Tasks**: Consult `.skills/css/README.md` to identify the relevant guide (e.g. layout, colors, typography, state).
 2. **JavaScript Tasks**: Consult `.skills/javascript/README.md` for standard library utilities, async patterns, DOM/events, and error causation.
 3. **Wizz.js Tasks**: Consult `.skills/wizz/README.md` for component architecture, reactivity, template directives, and deployment.
-4. **Design Systems (Neumorphism / Soft UI)**: Consult `.skills/design_principles/neumorphism/README.md` and inspect `.skills/design_principles/neumorphism/images/` for tactile component specs, OKLCH palettes, and WCAG safeguards.
+4. **Design Systems (Neumorphism & Swiss Grid)**: Consult `.skills/design_principles/README.md` (`.skills/design_principles/neumorphism/` or `.skills/design_principles/swiss_grid/`) and inspect the co-located `images/` specification sheets.
 5. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
 6. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
 ```
@@ -121,6 +121,17 @@ Multimodal-ready design rules, OKLCH palettes, WCAG 2.2 accessibility safeguards
 - **[Sliders, Toggle Switches & Tactile Dials](./design_principles/neumorphism/neumorphism_sliders_and_toggles_skill_guide.md)**: Recessed range sliders with filled progress channels & raised thumbs, binary `role="switch"` toggles, vertical faders, rotary knobs.
 - **[Loaders, Spinners & Progress Indicators](./design_principles/neumorphism/neumorphism_loader_and_progress_skill_guide.md)**: Stationary carved donut spinners with rotating conic arcs, percentage gauges, linear progress bars, concentric ripples.
 - **[Navigation, Tabs & WCAG Accessibility Rules](./design_principles/neumorphism/neumorphism_navigation_and_accessibility_skill_guide.md)**: Segmented pill tablists, floating navbars, pagination strips, and the 5 mandatory WCAG 2.2 accessibility safeguards.
+
+### 📐 [Design Principles — Swiss Grid (International Typographic Style)](./design_principles/swiss_grid/README.md)
+Mathematical editorial architecture, exposed `1px` hairlines, Neo-Grotesque typographic scales, and visual specification sheets in [`design_principles/swiss_grid/images/`](./design_principles/swiss_grid/images/):
+- **[Foundations, Exposed Architecture & Tokens](./design_principles/swiss_grid/swiss_grid_foundations_and_tokens_skill_guide.md)**: 12-column mathematical grid, seamless `gap: 1px` background-bleed hairlines, `2px–4px` structural rules, zero-radius law, coordinate markers.
+- **[Typography, Scale Contrast & Editorial Hierarchy](./design_principles/swiss_grid/swiss_grid_typography_and_hierarchy_skill_guide.md)**: Neo-Grotesque + Technical Monospace pairing, tight `0.92` display leading, flush-left ragged-right rule, scholarly marginalia/sidenote rails, `4px` top-ruled pull quotes.
+- **[Color Palettes, Signal Accents & Hard-Edge Inversion](./design_principles/swiss_grid/swiss_grid_color_palettes_and_theming_skill_guide.md)**: 90/10 monochrome + Single Signal Accent law, 4 canonical palettes (Zurich Archival Standard, Basel Newsprint, Geneva Concrete, Midnight Monolith Dark), full-cell hover polarity flips.
+- **[Magazine Layouts, Asymmetric Spreads & Subgrid Cards](./design_principles/swiss_grid/swiss_grid_editorial_layout_and_cards_skill_guide.md)**: Asymmetric 8-col/4-col hero spreads, cross-aligned `subgrid` article feeds, zero-radius monochrome image plates.
+- **[Zero-Radius Buttons, Cell Triggers & Action Bars](./design_principles/swiss_grid/swiss_grid_button_and_action_skill_guide.md)**: Hard-edge polarity-inverting buttons, Primary Signal Red CTAs, Full-Width Grid-Cell Action Bars, bracketed micro-links (`[ READ ESSAY → ]`), segmented filter strips.
+- **[Architectural Forms, Inputs & Selection Controls](./design_principles/swiss_grid/swiss_grid_forms_and_inputs_skill_guide.md)**: `2px` bottom-rule inputs, numbered catalog labels, seamless cell-framed subscription forms, `:user-invalid` red rules, zero-radius square checkboxes & radios.
+- **[Data Tables, Archive Indexes & KPI Matrices](./design_principles/swiss_grid/swiss_grid_tables_and_data_index_skill_guide.md)**: Full-row Signal Red hover-inversion archive directories, exposed `1px` hairline tables with `tabular-nums`, monolithic KPI callout cells.
+- **[Mastheads, Sticky TOCs, Status Tickers & Accessibility](./design_principles/swiss_grid/swiss_grid_navigation_and_status_skill_guide.md)**: Cell-partitioned editorial mastheads, sticky numbered TOC rails, `scroll()` reading progress bars, step tickers, and WCAG 2.2 zero-radius focus rings.
 
 ---
 
