@@ -70,8 +70,9 @@ Before writing, refactoring, or reviewing frontend styling or architecture, you 
 1. **CSS Tasks**: Consult `.skills/css/README.md` to identify the relevant guide (e.g. layout, colors, typography, state).
 2. **JavaScript Tasks**: Consult `.skills/javascript/README.md` for standard library utilities, async patterns, DOM/events, and error causation.
 3. **Wizz.js Tasks**: Consult `.skills/wizz/README.md` for component architecture, reactivity, template directives, and deployment.
-4. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
-5. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
+4. **Design Systems (Neumorphism / Soft UI)**: Consult `.skills/design_principles/neumorphism/README.md` and inspect `.skills/design_principles/neumorphism/images/` for tactile component specs, OKLCH palettes, and WCAG safeguards.
+5. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
+6. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
 ```
 
 If your project also uses [**`AGENTS.md`**](./AGENTS.md) (for OpenAI Codex, Cursor, or tools following that convention), ensure it points to `CLAUDE.md`:
@@ -109,6 +110,17 @@ Zero-dependency, compiler-guaranteed reactive framework standards:
 - **[Reactivity, State & Lifecycle](./wizz/wizz_reactivity_and_state_skill_guide.md)**: Microtask batching via `let`, read-only `export let` props, cross-tab reactive persistence via `persist()`, and `onMount`/`onDestroy`.
 - **[Template Directives & Control Flow](./wizz/wizz_template_directives_skill_guide.md)**: Structural `{#if}` branching, `{#each}` iteration constraints, container event delegation, and precomputed list data.
 - **[Architecture, Tooling & Server Deployment](./wizz/wizz_architecture_and_workflow_skill_guide.md)**: Project scaffolding (`wizz init`), live dev server (`wizz dev`), SSR production builds (`wizz build --adapter node`), and server API routes (`src/server/api/`).
+
+### 💠 [Design Principles — Modern Neumorphism (Soft UI)](./design_principles/neumorphism/README.md)
+Multimodal-ready design rules, OKLCH palettes, WCAG 2.2 accessibility safeguards, and visual component sheets in [`design_principles/neumorphism/images/`](./design_principles/neumorphism/images/):
+- **[Foundations, Light Physics & Tokens](./design_principles/neumorphism/neumorphism_foundations_and_tokens_skill_guide.md)**: $135^\circ$ single light-source law, 4 surface states (Extruded, Inset, Convex, Concave), `1:2` blur math, elevation & radius tokens.
+- **[Color Palettes, OKLCH & Dynamic Theming](./design_principles/neumorphism/neumorphism_color_palettes_and_theming_skill_guide.md)**: 4 curated palettes (Cool Porcelain, Warm Alabaster Sand, Sage Mist, Obsidian Slate Dark), Relative Color Syntax shadow derivation, `light-dark()`.
+- **[Layout Architecture, Cards & Depth Hierarchy](./design_principles/neumorphism/neumorphism_layout_and_cards_skill_guide.md)**: Shadow bleed clearance formula, alternating depth polarity (Raised $\rightarrow$ Inset $\rightarrow$ Raised), `2px` etched seam dividers, 30% Soft-UI density cap.
+- **[Tactile Buttons & Action Controls](./design_principles/neumorphism/neumorphism_button_skill_guide.md)**: 4-state press physics, circular icon buttons, high-contrast Primary Accent CTAs, segmented button groups.
+- **[Forms, Text Inputs & Selection Controls](./design_principles/neumorphism/neumorphism_forms_and_inputs_skill_guide.md)**: Recessed concave inputs, composite search bars, `:user-valid`/`:user-invalid` glow rings, tactile checkboxes & radios.
+- **[Sliders, Toggle Switches & Tactile Dials](./design_principles/neumorphism/neumorphism_sliders_and_toggles_skill_guide.md)**: Recessed range sliders with filled progress channels & raised thumbs, binary `role="switch"` toggles, vertical faders, rotary knobs.
+- **[Loaders, Spinners & Progress Indicators](./design_principles/neumorphism/neumorphism_loader_and_progress_skill_guide.md)**: Stationary carved donut spinners with rotating conic arcs, percentage gauges, linear progress bars, concentric ripples.
+- **[Navigation, Tabs & WCAG Accessibility Rules](./design_principles/neumorphism/neumorphism_navigation_and_accessibility_skill_guide.md)**: Segmented pill tablists, floating navbars, pagination strips, and the 5 mandatory WCAG 2.2 accessibility safeguards.
 
 ---
 

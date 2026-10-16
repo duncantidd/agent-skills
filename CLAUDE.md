@@ -47,14 +47,29 @@ agent-skills/
 │   ├── wizz_template_directives_skill_guide.md
 │   └── wizz_architecture_and_workflow_skill_guide.md
 │
+├── design_principles/           # Visual design systems & multimodal UI packages
+│   ├── README.md                # Design systems index
+│   └── neumorphism/             # Modern Neumorphism (Soft UI) design package
+│       ├── README.md            # Neumorphism laws, index, and multimodal guide
+│       ├── images/              # Component & palette reference sheets for agents
+│       ├── neumorphism_foundations_and_tokens_skill_guide.md
+│       ├── neumorphism_color_palettes_and_theming_skill_guide.md
+│       ├── neumorphism_layout_and_cards_skill_guide.md
+│       ├── neumorphism_button_skill_guide.md
+│       ├── neumorphism_forms_and_inputs_skill_guide.md
+│       ├── neumorphism_sliders_and_toggles_skill_guide.md
+│       ├── neumorphism_loader_and_progress_skill_guide.md
+│       └── neumorphism_navigation_and_accessibility_skill_guide.md
+│
 └── [future-domains]/            # (e.g., typescript/, web-perf/, etc.)
     ├── README.md
     └── [domain]_[topic]_skill_guide.md
 ```
 
 ### File Naming Convention
-- Domain directory: lowercase single word (e.g., `css`, `html`, `perf`).
-- Skill guide filename: `[domain]_[topic]_skill_guide.md` in lowercase `snake_case` (e.g., `css_layout_skill_guide.md`).
+- Domain directory: lowercase single word (e.g., `css`, `html`, `perf`) or nested under `design_principles/<system>/` for visual design packages.
+- Skill guide filename: `[domain]_[topic]_skill_guide.md` in lowercase `snake_case` (e.g., `css_layout_skill_guide.md`, `neumorphism_button_skill_guide.md`).
+- Visual reference assets (for design packages): `design_principles/<system>/images/` referenced via relative links (`./images/...`).
 - Domain overview: `README.md` in the root of the domain directory.
 
 ---
