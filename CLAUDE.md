@@ -73,17 +73,29 @@ agent-skills/
 │   │   ├── swiss_grid_tables_and_data_index_skill_guide.md
 │   │   └── swiss_grid_navigation_and_status_skill_guide.md
 │   │
-│   └── neo_brutalism/           # Neo-Brutalism (Neubrutalism) design package
-│       ├── README.md            # Neo-Brutalism laws, index, and multimodal guide
-│       ├── images/              # Component & palette specification sheets
-│       ├── neo_brutalism_foundations_and_tokens_skill_guide.md
-│       ├── neo_brutalism_color_palettes_and_theming_skill_guide.md
-│       ├── neo_brutalism_typography_and_stickers_skill_guide.md
-│       ├── neo_brutalism_layout_cards_and_windows_skill_guide.md
-│       ├── neo_brutalism_button_skill_guide.md
-│       ├── neo_brutalism_forms_and_inputs_skill_guide.md
-│       ├── neo_brutalism_toggles_sliders_and_loaders_skill_guide.md
-│       └── neo_brutalism_navigation_dialogs_and_accessibility_skill_guide.md
+│   ├── neo_brutalism/           # Neo-Brutalism (Neubrutalism) design package
+│   │   ├── README.md            # Neo-Brutalism laws, index, and multimodal guide
+│   │   ├── images/              # Component & palette specification sheets
+│   │   ├── neo_brutalism_foundations_and_tokens_skill_guide.md
+│   │   ├── neo_brutalism_color_palettes_and_theming_skill_guide.md
+│   │   ├── neo_brutalism_typography_and_stickers_skill_guide.md
+│   │   ├── neo_brutalism_layout_cards_and_windows_skill_guide.md
+│   │   ├── neo_brutalism_button_skill_guide.md
+│   │   ├── neo_brutalism_forms_and_inputs_skill_guide.md
+│   │   ├── neo_brutalism_toggles_sliders_and_loaders_skill_guide.md
+│   │   └── neo_brutalism_navigation_dialogs_and_accessibility_skill_guide.md
+│   │
+│   └── claymorphism/            # Claymorphism (3D Matte Clay) design package
+│       ├── README.md            # Claymorphism laws, index, and multimodal guide
+│       ├── images/              # 3D clay component & palette specification sheets
+│       ├── claymorphism_foundations_and_tokens_skill_guide.md
+│       ├── claymorphism_color_palettes_and_theming_skill_guide.md
+│       ├── claymorphism_typography_badges_and_3d_accents_skill_guide.md
+│       ├── claymorphism_layout_cards_and_floating_surfaces_skill_guide.md
+│       ├── claymorphism_button_skill_guide.md
+│       ├── claymorphism_forms_and_inputs_skill_guide.md
+│       ├── claymorphism_toggles_sliders_and_loaders_skill_guide.md
+│       └── claymorphism_navigation_dialogs_and_accessibility_skill_guide.md
 │
 └── [future-domains]/            # (e.g., typescript/, web-perf/, etc.)
     ├── README.md
