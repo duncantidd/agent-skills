@@ -70,7 +70,7 @@ Before writing, refactoring, or reviewing frontend styling or architecture, you 
 1. **CSS Tasks**: Consult `.skills/css/README.md` to identify the relevant guide (e.g. layout, colors, typography, state).
 2. **JavaScript Tasks**: Consult `.skills/javascript/README.md` for standard library utilities, async patterns, DOM/events, and error causation.
 3. **Wizz.js Tasks**: Consult `.skills/wizz/README.md` for component architecture, reactivity, template directives, and deployment.
-4. **Design Systems (Neumorphism & Swiss Grid)**: Consult `.skills/design_principles/README.md` (`.skills/design_principles/neumorphism/` or `.skills/design_principles/swiss_grid/`) and inspect the co-located `images/` specification sheets.
+4. **Design Systems (Neumorphism, Swiss Grid & Neo-Brutalism)**: Consult `.skills/design_principles/README.md` (`.skills/design_principles/neumorphism/`, `.skills/design_principles/swiss_grid/`, or `.skills/design_principles/neo_brutalism/`) and inspect the co-located `images/` specification sheets.
 5. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
 6. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
 ```
@@ -132,6 +132,17 @@ Mathematical editorial architecture, exposed `1px` hairlines, Neo-Grotesque typo
 - **[Architectural Forms, Inputs & Selection Controls](./design_principles/swiss_grid/swiss_grid_forms_and_inputs_skill_guide.md)**: `2px` bottom-rule inputs, numbered catalog labels, seamless cell-framed subscription forms, `:user-invalid` red rules, zero-radius square checkboxes & radios.
 - **[Data Tables, Archive Indexes & KPI Matrices](./design_principles/swiss_grid/swiss_grid_tables_and_data_index_skill_guide.md)**: Full-row Signal Red hover-inversion archive directories, exposed `1px` hairline tables with `tabular-nums`, monolithic KPI callout cells.
 - **[Mastheads, Sticky TOCs, Status Tickers & Accessibility](./design_principles/swiss_grid/swiss_grid_navigation_and_status_skill_guide.md)**: Cell-partitioned editorial mastheads, sticky numbered TOC rails, `scroll()` reading progress bars, step tickers, and WCAG 2.2 zero-radius focus rings.
+
+### ⚡ [Design Principles — Neo-Brutalism (Neubrutalism)](./design_principles/neo_brutalism/README.md)
+Exposed `2px–4px` ink borders, `0px`-blur hard offset shadows, coupled mechanical push-button physics, and visual specification sheets in [`design_principles/neo_brutalism/images/`](./design_principles/neo_brutalism/images/):
+- **[Foundations, Hard Shadows & Push-Button Physics](./design_principles/neo_brutalism/neo_brutalism_foundations_and_tokens_skill_guide.md)**: Exposed stroke tiers (`2px`/`3px`/`4px`), zero-blur offset shadow tiers (`3px` to `12px`), and the Invariant Translation + Shadow Coupling Law ($\Delta\text{translate} + \Delta\text{shadow} = \text{constant}$).
+- **[Color Palettes, OKLCH & Dark Mode Shadows](./design_principles/neo_brutalism/neo_brutalism_color_palettes_and_theming_skill_guide.md)**: Warm Cream (`#FAF6EE`) & Putty (`#EFECE6`) canvases, 4 canonical palettes (Gumroad Pop, Studio Pastel, Indie Terminal, Cyber Brutal Dark), and colored hard shadows in dark mode.
+- **[Typography, Vinyl Stickers & Marquee Strips](./design_principles/neo_brutalism/neo_brutalism_typography_and_stickers_skill_guide.md)**: Heavy display grotesques + monospace specs, `-webkit-text-stroke` with `paint-order: stroke fill`, boxed inline highlights, tilted corner stickers, and accessible CSS marquees.
+- **[Retro OS Windows, Color-Blocked Cards & Bento Grids](./design_principles/neo_brutalism/neo_brutalism_layout_cards_and_windows_skill_guide.md)**: Mac OS 8 / Win95 window chrome (`.nb-window`), compartmentalized pricing cards, overlapping corner badges, and shadow clearance grid gutters.
+- **[Mechanical Push-Buttons, Keycaps & Segmented Bars](./design_principles/neo_brutalism/neo_brutalism_button_skill_guide.md)**: 3-state mechanical displacement (Idle `5px 5px 0` $\rightarrow$ Hover Lift `8px 8px 0` $\rightarrow$ Active Slam `0px 0px 0`), square icon keycaps, and connected segmented button groups.
+- **[Chunky Forms, Inputs & Validation Badges](./design_principles/neo_brutalism/neo_brutalism_forms_and_inputs_skill_guide.md)**: `3px`-bordered inputs, warm yellow focus shifts (`#FFFDF0`) with pink hard shadows, attached input+submit bars, custom `28px` checkboxes/radios, and `:user-invalid` error stickers.
+- **[Hardware Toggles, Blocky Sliders, Progress & Steppers](./design_principles/neo_brutalism/neo_brutalism_toggles_sliders_and_loaders_skill_guide.md)**: Mechanical rocker switches (`role="switch"`), square hard-shadowed range faders, retro 10-cell battery progress meters, hazard stripe bars, and numbered checkout steppers.
+- **[Boxed Navbars, Manila-Folder Tabs, `<dialog>` Modals & WCAG 2.2](./design_principles/neo_brutalism/neo_brutalism_navigation_dialogs_and_accessibility_skill_guide.md)**: Compartmentalized top navbars, seam-overlapping folder tabs, native `<dialog>` OS modal windows, halftone backdrops, and `3px dashed` `:focus-visible` outlines.
 
 ---
 

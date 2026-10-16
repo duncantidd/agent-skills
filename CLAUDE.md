@@ -61,17 +61,29 @@ agent-skills/
 │   │   ├── neumorphism_loader_and_progress_skill_guide.md
 │   │   └── neumorphism_navigation_and_accessibility_skill_guide.md
 │   │
-│   └── swiss_grid/              # Swiss Grid (International Typographic Style) package
-│       ├── README.md            # Swiss Grid laws, index, and multimodal guide
-│       ├── images/              # Editorial & component specification sheets
-│       ├── swiss_grid_foundations_and_tokens_skill_guide.md
-│       ├── swiss_grid_typography_and_hierarchy_skill_guide.md
-│       ├── swiss_grid_color_palettes_and_theming_skill_guide.md
-│       ├── swiss_grid_editorial_layout_and_cards_skill_guide.md
-│       ├── swiss_grid_button_and_action_skill_guide.md
-│       ├── swiss_grid_forms_and_inputs_skill_guide.md
-│       ├── swiss_grid_tables_and_data_index_skill_guide.md
-│       └── swiss_grid_navigation_and_status_skill_guide.md
+│   ├── swiss_grid/              # Swiss Grid (International Typographic Style) package
+│   │   ├── README.md            # Swiss Grid laws, index, and multimodal guide
+│   │   ├── images/              # Editorial & component specification sheets
+│   │   ├── swiss_grid_foundations_and_tokens_skill_guide.md
+│   │   ├── swiss_grid_typography_and_hierarchy_skill_guide.md
+│   │   ├── swiss_grid_color_palettes_and_theming_skill_guide.md
+│   │   ├── swiss_grid_editorial_layout_and_cards_skill_guide.md
+│   │   ├── swiss_grid_button_and_action_skill_guide.md
+│   │   ├── swiss_grid_forms_and_inputs_skill_guide.md
+│   │   ├── swiss_grid_tables_and_data_index_skill_guide.md
+│   │   └── swiss_grid_navigation_and_status_skill_guide.md
+│   │
+│   └── neo_brutalism/           # Neo-Brutalism (Neubrutalism) design package
+│       ├── README.md            # Neo-Brutalism laws, index, and multimodal guide
+│       ├── images/              # Component & palette specification sheets
+│       ├── neo_brutalism_foundations_and_tokens_skill_guide.md
+│       ├── neo_brutalism_color_palettes_and_theming_skill_guide.md
+│       ├── neo_brutalism_typography_and_stickers_skill_guide.md
+│       ├── neo_brutalism_layout_cards_and_windows_skill_guide.md
+│       ├── neo_brutalism_button_skill_guide.md
+│       ├── neo_brutalism_forms_and_inputs_skill_guide.md
+│       ├── neo_brutalism_toggles_sliders_and_loaders_skill_guide.md
+│       └── neo_brutalism_navigation_dialogs_and_accessibility_skill_guide.md
 │
 └── [future-domains]/            # (e.g., typescript/, web-perf/, etc.)
     ├── README.md
