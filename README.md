@@ -71,8 +71,9 @@ Before writing, refactoring, or reviewing frontend styling or architecture, you 
 2. **JavaScript Tasks**: Consult `.skills/javascript/README.md` for standard library utilities, async patterns, DOM/events, and error causation.
 3. **Wizz.js Tasks**: Consult `.skills/wizz/README.md` for component architecture, reactivity, template directives, and deployment.
 4. **Design Systems (Neumorphism, Swiss Grid, Neo-Brutalism & Claymorphism)**: Consult `.skills/design_principles/README.md` (`.skills/design_principles/neumorphism/`, `.skills/design_principles/swiss_grid/`, `.skills/design_principles/neo_brutalism/`, or `.skills/design_principles/claymorphism/`) and inspect the co-located `images/` specification sheets.
-5. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
-6. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`) are introduced.
+5. **Testing, Benchmarking, Regression & Review Loops**: Consult `.skills/testing/README.md` (`.skills/testing/javascript/` for `node:test`, V8 benchmarking, and regression suites; `.skills/testing/workflows/` for adversarial code review and closed-loop test/review cycles).
+6. **Decision Matrix**: Use the guide's Decision Matrix to choose the right platform-native feature.
+7. **Anti-Pattern Audit**: Check the guide's **Do Not** table to ensure no obsolete patterns (e.g. `!important`, physical coordinates, lodash imports, `forEach(async)`, cold `Date.now()` benchmarks) are introduced.
 ```
 
 If your project also uses [**`AGENTS.md`**](./AGENTS.md) (for OpenAI Codex, Cursor, or tools following that convention), ensure it points to `CLAUDE.md`:
@@ -110,6 +111,14 @@ Zero-dependency, compiler-guaranteed reactive framework standards:
 - **[Reactivity, State & Lifecycle](./wizz/wizz_reactivity_and_state_skill_guide.md)**: Microtask batching via `let`, read-only `export let` props, cross-tab reactive persistence via `persist()`, and `onMount`/`onDestroy`.
 - **[Template Directives & Control Flow](./wizz/wizz_template_directives_skill_guide.md)**: Structural `{#if}` branching, `{#each}` iteration constraints, container event delegation, and precomputed list data.
 - **[Architecture, Tooling & Server Deployment](./wizz/wizz_architecture_and_workflow_skill_guide.md)**: Project scaffolding (`wizz init`), live dev server (`wizz dev`), SSR production builds (`wizz build --adapter node`), and server API routes (`src/server/api/`).
+
+### 🧪 [Testing, Benchmarking, Regression & Review Loops](./testing/README.md)
+Two-layer verification architecture separating **JavaScript Runtime Testing** ([`testing/javascript/`](./testing/javascript/README.md)) from **Cross-Language Review & Verification Workflows** ([`testing/workflows/`](./testing/workflows/README.md)):
+- **[JavaScript Testing Standards](./testing/javascript/js_testing_standards_skill_guide.md)**: Zero-dependency `node:test` (`node --test`), `node:assert/strict`, parameterized subtests, scoped `t.mock.method()` & `t.mock.timers`, `t.signal` + `t.after()` teardown, and Playwright semantic role locators.
+- **[JavaScript Benchmark Testing](./testing/javascript/js_benchmark_testing_skill_guide.md)**: V8 TurboFan JIT warmup loops, Dead-Code Elimination (DCE) blackhole sinks, statistical percentiles (`p50`/`p95`/`p99`/`RME%`), interleaved A/B trials, `process.memoryUsage().heapUsed` profiling, and `16.6ms` browser frame budgets.
+- **[JavaScript Regression Testing](./testing/javascript/js_regression_testing_skill_guide.md)**: Strict Red-Before-Green bug reproduction, deterministic `Promise.withResolvers()` concurrency race barriers, `err.cause` chain assertions, `deepFreeze()` immutability guards, and computed CSS/Wizz geometry invariants.
+- **[Code Review Standards & Adversarial Auditing](./testing/workflows/code_review_standards_skill_guide.md)**: 4-tier severity taxonomy (`BLOCKER`, `MAJOR`, `MINOR`, `NIT`), 4-Pass Adversarial Audit (Correctness/Concurrency, CSS/Wizz/Design Laws, Security, Test Mutation), and structured review output.
+- **[Agent Testing & Review Loops](./testing/workflows/testing_and_review_loops_skill_guide.md)**: Closed-loop execution protocols: Feature TDD Loop, Red-Before-Green Bugfix Loop, Interleaved A/B Benchmark Loop, Flake Elimination Loop, and Pre-Completion Quality Gate.
 
 ### 💠 [Design Principles — Modern Neumorphism (Soft UI)](./design_principles/neumorphism/README.md)
 Multimodal-ready design rules, OKLCH palettes, WCAG 2.2 accessibility safeguards, and visual component sheets in [`design_principles/neumorphism/images/`](./design_principles/neumorphism/images/):

@@ -97,13 +97,25 @@ agent-skills/
 │       ├── claymorphism_toggles_sliders_and_loaders_skill_guide.md
 │       └── claymorphism_navigation_dialogs_and_accessibility_skill_guide.md
 │
+├── testing/                     # Testing, benchmarking, regression & review domain
+│   ├── README.md                # Two-layer verification architecture & index
+│   ├── javascript/              # JavaScript-native testing, benchmarking & regression
+│   │   ├── README.md            # JS verification principles & index
+│   │   ├── js_testing_standards_skill_guide.md
+│   │   ├── js_benchmark_testing_skill_guide.md
+│   │   └── js_regression_testing_skill_guide.md
+│   └── workflows/               # Cross-language review & agent verification loops
+│       ├── README.md            # Workflow principles & index
+│       ├── code_review_standards_skill_guide.md
+│       └── testing_and_review_loops_skill_guide.md
+│
 └── [future-domains]/            # (e.g., typescript/, web-perf/, etc.)
     ├── README.md
     └── [domain]_[topic]_skill_guide.md
 ```
 
 ### File Naming Convention
-- Domain directory: lowercase single word (e.g., `css`, `html`, `perf`) or nested under `design_principles/<system>/` for visual design packages.
+- Domain directory: lowercase single word (e.g., `css`, `javascript`, `wizz`, `testing`) or nested under `design_principles/<system>/` for visual design packages and `testing/<language-or-workflows>/` for verification suites.
 - Skill guide filename: `[domain]_[topic]_skill_guide.md` in lowercase `snake_case` (e.g., `css_layout_skill_guide.md`, `neumorphism_button_skill_guide.md`).
 - Visual reference assets (for design packages): `design_principles/<system>/images/` referenced via relative links (`./images/...`).
 - Domain overview: `README.md` in the root of the domain directory.
