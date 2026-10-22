@@ -97,17 +97,29 @@ agent-skills/
 │   │   ├── claymorphism_toggles_sliders_and_loaders_skill_guide.md
 │   │   └── claymorphism_navigation_dialogs_and_accessibility_skill_guide.md
 │   │
-│   └── japandi/                 # Japandi (Scandi-Minimalism) design package
-│       ├── README.md            # Japandi laws, index, and multimodal guide
-│       ├── images/              # Mineral, Shoji & ceramic specification sheets
-│       ├── japandi_foundations_and_tokens_skill_guide.md
-│       ├── japandi_color_palettes_and_theming_skill_guide.md
-│       ├── japandi_typography_and_editorial_hierarchy_skill_guide.md
-│       ├── japandi_layout_ma_spacing_and_shoji_grids_skill_guide.md
-│       ├── japandi_button_and_action_skill_guide.md
-│       ├── japandi_forms_and_inputs_skill_guide.md
-│       ├── japandi_toggles_sliders_and_zen_loaders_skill_guide.md
-│       └── japandi_navigation_drawers_and_accessibility_skill_guide.md
+│   ├── japandi/                 # Japandi (Scandi-Minimalism) design package
+│   │   ├── README.md            # Japandi laws, index, and multimodal guide
+│   │   ├── images/              # Mineral, Shoji & ceramic specification sheets
+│   │   ├── japandi_foundations_and_tokens_skill_guide.md
+│   │   ├── japandi_color_palettes_and_theming_skill_guide.md
+│   │   ├── japandi_typography_and_editorial_hierarchy_skill_guide.md
+│   │   ├── japandi_layout_ma_spacing_and_shoji_grids_skill_guide.md
+│   │   ├── japandi_button_and_action_skill_guide.md
+│   │   ├── japandi_forms_and_inputs_skill_guide.md
+│   │   ├── japandi_toggles_sliders_and_zen_loaders_skill_guide.md
+│   │   └── japandi_navigation_drawers_and_accessibility_skill_guide.md
+│   │
+│   └── glassmorphism/           # Glassmorphism (Spatial & Frosted Glass) package
+│       ├── README.md            # Glassmorphism laws, index, and multimodal guide
+│       ├── images/              # Spatial glass & specular specification sheets
+│       ├── glassmorphism_foundations_and_tokens_skill_guide.md
+│       ├── glassmorphism_color_palettes_and_theming_skill_guide.md
+│       ├── glassmorphism_typography_badges_and_optical_legibility_skill_guide.md
+│       ├── glassmorphism_layout_cards_and_spatial_hierarchy_skill_guide.md
+│       ├── glassmorphism_button_and_action_skill_guide.md
+│       ├── glassmorphism_forms_and_inputs_skill_guide.md
+│       ├── glassmorphism_toggles_sliders_and_luminous_loaders_skill_guide.md
+│       └── glassmorphism_navigation_dialogs_and_accessibility_skill_guide.md
 │
 ├── testing/                     # Testing, benchmarking, regression & review domain
 │   ├── README.md                # Two-layer verification architecture & index
