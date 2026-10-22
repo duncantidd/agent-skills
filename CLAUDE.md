@@ -85,17 +85,29 @@ agent-skills/
 │   │   ├── neo_brutalism_toggles_sliders_and_loaders_skill_guide.md
 │   │   └── neo_brutalism_navigation_dialogs_and_accessibility_skill_guide.md
 │   │
-│   └── claymorphism/            # Claymorphism (3D Matte Clay) design package
-│       ├── README.md            # Claymorphism laws, index, and multimodal guide
-│       ├── images/              # 3D clay component & palette specification sheets
-│       ├── claymorphism_foundations_and_tokens_skill_guide.md
-│       ├── claymorphism_color_palettes_and_theming_skill_guide.md
-│       ├── claymorphism_typography_badges_and_3d_accents_skill_guide.md
-│       ├── claymorphism_layout_cards_and_floating_surfaces_skill_guide.md
-│       ├── claymorphism_button_skill_guide.md
-│       ├── claymorphism_forms_and_inputs_skill_guide.md
-│       ├── claymorphism_toggles_sliders_and_loaders_skill_guide.md
-│       └── claymorphism_navigation_dialogs_and_accessibility_skill_guide.md
+│   ├── claymorphism/            # Claymorphism (3D Matte Clay) design package
+│   │   ├── README.md            # Claymorphism laws, index, and multimodal guide
+│   │   ├── images/              # 3D clay component & palette specification sheets
+│   │   ├── claymorphism_foundations_and_tokens_skill_guide.md
+│   │   ├── claymorphism_color_palettes_and_theming_skill_guide.md
+│   │   ├── claymorphism_typography_badges_and_3d_accents_skill_guide.md
+│   │   ├── claymorphism_layout_cards_and_floating_surfaces_skill_guide.md
+│   │   ├── claymorphism_button_skill_guide.md
+│   │   ├── claymorphism_forms_and_inputs_skill_guide.md
+│   │   ├── claymorphism_toggles_sliders_and_loaders_skill_guide.md
+│   │   └── claymorphism_navigation_dialogs_and_accessibility_skill_guide.md
+│   │
+│   └── japandi/                 # Japandi (Scandi-Minimalism) design package
+│       ├── README.md            # Japandi laws, index, and multimodal guide
+│       ├── images/              # Mineral, Shoji & ceramic specification sheets
+│       ├── japandi_foundations_and_tokens_skill_guide.md
+│       ├── japandi_color_palettes_and_theming_skill_guide.md
+│       ├── japandi_typography_and_editorial_hierarchy_skill_guide.md
+│       ├── japandi_layout_ma_spacing_and_shoji_grids_skill_guide.md
+│       ├── japandi_button_and_action_skill_guide.md
+│       ├── japandi_forms_and_inputs_skill_guide.md
+│       ├── japandi_toggles_sliders_and_zen_loaders_skill_guide.md
+│       └── japandi_navigation_drawers_and_accessibility_skill_guide.md
 │
 ├── testing/                     # Testing, benchmarking, regression & review domain
 │   ├── README.md                # Two-layer verification architecture & index
